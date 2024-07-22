@@ -63,6 +63,10 @@ header nav ul li a:hover {
     margin-top: 80px; /* Offset for the fixed header */
 }
 
+.hero-text {
+    color: black; /* Set the hero text to black */
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
