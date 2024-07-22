@@ -19,6 +19,9 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 header .logo {
@@ -56,17 +59,19 @@ header nav ul li a:hover {
     background: url('hero-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 20px;
+    margin-top: 80px; /* Offset for the fixed header */
 }
 
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
 }
 
 section {
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .cta-btn {
@@ -75,6 +80,8 @@ section {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block; /* Make buttons display inline-block */
 }
 
 .cta-btn:hover {
@@ -90,6 +97,7 @@ section {
 .team-member {
     text-align: center;
     margin: 20px;
+    flex: 1 1 200px; /* Flexbox property to handle responsive design */
 }
 
 .team-member img {
@@ -100,7 +108,48 @@ section {
 }
 
 .service {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pricing-plan {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px); /* Responsive layout for 4 columns */
+    margin: 10px;
+}
+
+.pricing-plan h3 {
+    color: #007bff;
+}
+
+.pricing-plan p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-plan ul li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
 }
 
 footer {
