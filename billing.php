@@ -15,11 +15,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/#home">Home</a></li>
-                    <li><a href="/#about">About Us</a></li>
-                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/home#home">Home</a></li>
+                    <li><a href="/home#about">About Us</a></li>
+                    <li><a href="/home#services">Services</a></li>
                     <li><a href="/billing">Billing</a></li>
-                    <li><a href="/#contact">Contact Us</a></li>
+                    <li><a href="/home#contact">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -99,8 +99,8 @@
         <div class="container">
             <p>&copy; 2024 Cypher Network. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/#privacy">Privacy Policy</a>
-                <a href="/#terms">Terms of Service</a>
+                <a href="/home#privacy">Privacy Policy</a>
+                <a href="/home#terms">Terms of Service</a>
             </div>
         </div>
     </footer>
