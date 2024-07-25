@@ -154,3 +154,57 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.dropdown-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-btn:after {
+    content: '\25BC'; /* Down arrow */
+    float: right;
+    margin-left: 10px;
+}
+
+.dropdown-btn.active:after {
+    content: '\25B2'; /* Up arrow */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content .pricing-plan {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content .pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content .cta-btn {
+    display: inline-block;
+    width: auto;
+    margin-top: 10px;
+}
