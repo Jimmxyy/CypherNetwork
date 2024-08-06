@@ -17,6 +17,7 @@
                 <ul>
                     <li><a href="/index">Home</a></li>
                     <li><a href="/about">About Us</a></li>
+                    <li><a href="/services">Services</a></li>
                     <li><a href="/billing">Billing</a></li>
                     <li><a href="/contact">Contact Us</a></li>
                     <li><a href="/login">Login</a></li>
@@ -26,8 +27,8 @@
     </header>
 
     <main>
-        <div class="login-container">
-            <h2>Login to Your Account</h2>
+        <section class="login-container">
+            <h2>Login</h2>
             <form action="/login" method="post">
                 <div class="form-group">
                     <label for="username">Username:</label>
@@ -39,11 +40,10 @@
                 </div>
                 <div class="button-group">
                     <button type="submit" class="login-btn">Login</button>
-                    <button type="button" class="register-btn" onclick="window.location.href='/register'">Register</button>
+                    <a href="/register" class="register-btn">Register</a>
                 </div>
             </form>
-            <p>Forgot your password? <a href="/reset">Reset it here</a>.</p>
-        </div>
+        </section>
     </main>
 
     <footer>
