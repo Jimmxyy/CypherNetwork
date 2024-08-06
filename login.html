@@ -10,40 +10,49 @@
     <header>
         <div class="container">
             <div class="logo">
+                <img src="cn.jpg" alt="Cypher Network Logo" class="logo-img">
                 <h1>Cypher Network</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="billing.html">Billing</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/billing">Billing</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="login-container">
-        <h2>Login to Cypher Network</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
+    <main>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="login-btn">Login</button>
+                    <button type="button" class="register-btn" onclick="window.location.href='/register'">Register</button>
+                </div>
+            </form>
+            <p>Forgot your <a href="/reset">password?</a></p>
+        </div>
+    </main>
 
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cypher Network. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
             </div>
-
-            <div class="button-group">
-                <button type="submit" class="login-btn">Login</button>
-                <button type="button" class="register-btn" onclick="window.location.href='register.html';">Register</button>
-            </div>
-        </form>
-
-        <p>Forgot your password? <a href="#">Reset it here</a></p>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
