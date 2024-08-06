@@ -119,35 +119,8 @@ footer .footer-links a:hover {
     background: #f9f9f9;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content .pricing-plan {
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropdown-btn {
-    background-color: #3e8e41;
-}
-
-/* Login Styles */
-.login-container {
-    max-width: 400px;
+.login-container, .contact-container {
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
@@ -155,11 +128,15 @@ footer .footer-links a:hover {
     background: #fff;
 }
 
-.login-container h2 {
+.login-container h2, .contact-container h2 {
     margin-bottom: 20px;
 }
 
-.login-btn, .register-btn {
+.login-container .form-group, .contact-container .form-group {
+    margin-bottom: 15px;
+}
+
+.login-btn, .register-btn, .contact-container button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -184,32 +161,8 @@ footer .footer-links a:hover {
     background-color: #c82333;
 }
 
-/* Contact Styles */
-.contact-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: #002147; /* Navy blueish color */
-    color: #fff;
-}
-
-.contact-container h2 {
-    margin-bottom: 20px;
-}
-
-.contact-container form {
-    margin-bottom: 20px;
-}
-
 .contact-container button {
     background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .contact-container button:hover {
@@ -217,7 +170,7 @@ footer .footer-links a:hover {
 }
 
 .contact-container a {
-    color: #f0f0f0;
+    color: #007bff;
     text-decoration: underline;
 }
 

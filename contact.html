@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Cypher Network</title>
+    <title>Cypher Network - Contact Us</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="cn.jpg" alt="Cypher Network Logo" class="logo-img">
+                <img src="cn.jpg" alt="Cypher Network Logo">
                 <h1>Cypher Network</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/index">Home</a></li>
                     <li><a href="/about">About Us</a></li>
+                    <li><a href="/services">Services</a></li>
                     <li><a href="/billing">Billing</a></li>
                     <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/login">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,24 +29,24 @@
     <main>
         <div class="contact-container">
             <h2>Contact Us</h2>
-            <form>
+            <form action="/contact" method="post">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
+                    <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
                 <div class="button-group">
                     <button type="submit">Send Message</button>
                 </div>
             </form>
-            <p>Join our <a href="https://discord.gg/yourdiscordlink" target="_blank">Support Discord</a> for more help!</p>
+            <p>Join our support Discord: <a href="https://discord.gg/example" target="_blank">Join Now</a></p>
         </div>
     </main>
 
