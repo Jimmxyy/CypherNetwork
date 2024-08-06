@@ -1,14 +1,19 @@
+/* Global Styles */
 body {
+    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -43,102 +48,153 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 20px 0;
+/* Login Page Styles */
+.login-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    margin: 80px auto 0; /* Adjusted margin to account for fixed header */
+    text-align: center;
 }
 
-h1, h2, h3, h4 {
-    margin: 10px 0;
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group .login-btn {
+    background-color: #28a745; /* Green */
+}
+
+.button-group .register-btn {
+    background-color: #dc3545; /* Red */
+}
+
+.button-group button:hover {
+    opacity: 0.8;
+}
+
+.login-container p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Page Styles */
+.contact-container {
+    background: #001f3f; /* Navy blue */
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    margin: 80px auto 0; /* Adjusted margin to account for fixed header */
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
 }
 
 .button-group {
     margin-top: 20px;
 }
 
-.cta-btn {
-    display: inline-block;
+.button-group button {
     padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue */
     transition: background-color 0.3s;
 }
 
-.cta-btn:hover {
+.button-group button:hover {
     background-color: #0056b3;
 }
 
-form {
-    margin-top: 20px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer .footer-links a {
-    color: #fff;
-    margin: 0 10px;
+.contact-container a {
+    color: #007bff;
     text-decoration: none;
 }
 
-footer .footer-links a:hover {
+.contact-container a:hover {
     text-decoration: underline;
-}
-
-.pricing-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.pricing-plan {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content .pricing-plan {
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropdown-btn {
-    background-color: #3e8e41;
 }
