@@ -9,11 +9,50 @@
         body {
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
         .login-container {
@@ -22,7 +61,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 90%;
             max-width: 400px;
-            padding: 20px;
+            padding: 30px;
+            margin: 80px auto 0; /* Adjusted margin to account for fixed header */
             text-align: center;
         }
 
@@ -95,6 +135,24 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="cn.jpg" alt="Cypher Network Logo" class="logo-img">
+                <h1>Cypher Network</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="billing.html">Billing</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div class="login-container">
         <h2>Login to Cypher Network</h2>
         <form action="#" method="post">
