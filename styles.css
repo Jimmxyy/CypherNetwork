@@ -47,8 +47,19 @@ main {
     padding: 20px 0;
 }
 
-h1, h2, h3, h4 {
-    margin: 10px 0;
+.hero {
+    background: #007bff;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0 0 20px;
+}
+
+.hero p {
+    margin: 0 0 30px;
 }
 
 .button-group {
@@ -59,7 +70,6 @@ h1, h2, h3, h4 {
     display: inline-block;
     padding: 10px 20px;
     margin-right: 10px;
-    background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -70,21 +80,56 @@ h1, h2, h3, h4 {
     background-color: #0056b3;
 }
 
-form {
-    margin-top: 20px;
+.features {
+    padding: 20px 0;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
+.feature-item {
+    text-align: center;
+    margin: 20px 0;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
+.feature-item h3 {
+    margin: 0 0 10px;
+}
+
+.feature-item p {
+    margin: 0;
+}
+
+.about, .our-team {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.our-team {
+    background: #f9f9f9;
+}
+
+.our-team h2 {
+    margin: 0 0 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1%;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+}
+
+.team-member h3 {
+    margin: 0 0 5px;
+}
+
+.team-member p {
+    margin: 0;
 }
 
 footer {
@@ -102,78 +147,4 @@ footer .footer-links a {
 
 footer .footer-links a:hover {
     text-decoration: underline;
-}
-
-.pricing-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.pricing-plan {
-    flex: 1;
-    min-width: 280px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: #f9f9f9;
-}
-
-.login-container, .contact-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: #fff;
-}
-
-.login-container h2, .contact-container h2 {
-    margin-bottom: 20px;
-}
-
-.login-container .form-group, .contact-container .form-group {
-    margin-bottom: 15px;
-}
-
-.login-btn, .register-btn, .contact-container button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.login-btn {
-    background-color: #28a745;
-}
-
-.login-btn:hover {
-    background-color: #218838;
-}
-
-.register-btn {
-    background-color: #dc3545;
-}
-
-.register-btn:hover {
-    background-color: #c82333;
-}
-
-.contact-container button {
-    background-color: #007bff;
-}
-
-.contact-container button:hover {
-    background-color: #0056b3;
-}
-
-.contact-container a {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-.contact-container a:hover {
-    text-decoration: none;
 }
