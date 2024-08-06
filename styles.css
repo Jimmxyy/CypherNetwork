@@ -2,209 +2,143 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #007bff; /* Blue color */
-    color: white;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 80px auto 0; /* Offset for the fixed header */
-    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    margin-top: 80px; /* Offset for the fixed header */
+.logo img {
+    height: 50px;
 }
 
-.hero-text {
-    color: black; /* Set the hero text to black */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-section {
-    padding: 60px 20px;
-    margin-bottom: 20px;
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+}
+
+.button-group {
+    margin-top: 20px;
 }
 
 .cta-btn {
-    background-color: #007bff; /* Blue color */
-    color: white;
+    display: inline-block;
     padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px 0;
-    display: inline-block; /* Make buttons display inline-block */
+    transition: background-color 0.3s;
 }
 
 .cta-btn:hover {
     background-color: #0056b3;
 }
 
-.pricing-table {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+form {
+    margin-top: 20px;
 }
 
-.pricing-plan {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(25% - 20px); /* Responsive layout for 4 columns */
-    transition: transform 0.3s, box-shadow 0.3s;
+form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.pricing-plan:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.pricing-plan h4 {
-    color: #007bff;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.pricing-plan p {
-    font-size: 1.2em;
-    color: #333;
-}
-
-.pricing-plan ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.pricing-plan ul li {
-    background: #f9f9f9;
+form input, form textarea {
+    width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
-.footer-links a {
-    color: white;
-    text-decoration: none;
+footer .footer-links a {
+    color: #fff;
     margin: 0 10px;
+    text-decoration: none;
 }
 
-.footer-links a:hover {
+footer .footer-links a:hover {
     text-decoration: underline;
 }
 
-/* Dropdown Styles */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pricing-plan {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 .dropdown {
     position: relative;
-    margin-bottom: 20px;
-}
-
-.dropdown-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-}
-
-.dropdown-btn:after {
-    content: '\25BC'; /* Down arrow */
-    float: right;
-    margin-left: 10px;
-}
-
-.dropdown-btn.active:after {
-    content: '\25B2'; /* Up arrow */
+    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content .pricing-plan {
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
+    display: block;
 }
 
-.dropdown-content .pricing-plan:last-child {
-    border-bottom: none;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.dropdown-content .cta-btn {
-    display: inline-block;
-    width: auto;
-    margin-top: 10px;
+.dropdown:hover .dropdown-btn {
+    background-color: #3e8e41;
 }
